@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediación Profesional</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body { scroll-behavior: smooth; }
+
+        /* NAVBAR */
+        .navbar {
+            background: linear-gradient(90deg, #ff7e00, #ff9f43);
+        }
+        .navbar a { color: #fff !important; font-weight: 600; }
+
+        /* HERO */
+        .hero-img {
+            height: 70vh;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        /* TITULARES */
+        h2.section-title {
+            color: #ff7e00;
+            font-weight: 700;
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(90deg, #ff7e00, #ff9f43);
+            color: white;
+            padding: 40px 0;
+        }
+
+        /* BOTONES */
+        .btn-orange {
+            background-color: #ff7e00;
+            color: white;
+            border: none;
+        }
+        .btn-orange:hover {
+            background-color: #e56f00;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Mediación Profesional</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quienes">Quiénes somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#servicios">Comunitaria</a></li>
+                        <li><a class="dropdown-item" href="#servicios">Educativa</a></li>
+                        <li><a class="dropdown-item" href="#servicios">Sanitaria</a></li>
+                        <li><a class="dropdown-item" href="#servicios">Social</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main class="mt-5 pt-4">
+
+    <!-- CARRUSEL -->
+    <section id="inicio">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1600/900?random=1" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">Resolución pacífica de conflictos</h2>
+                        <p>Construimos puentes donde otros ven barreras</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1600/900?random=2" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">Mediación Comunitaria</h2>
+                        <p>Transformamos la convivencia</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1600/900?random=3" class="d-block w-100 hero-img">
+                    <div class="carousel-caption">
+                        <h2 class="fw-bold">Diálogo y soluciones</h2>
+                        <p>Facilitamos acuerdos duraderos</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes" class="container py-5">
+        <h2 class="text-center section-title mb-4" data-aos="fade-up">Quiénes somos</h2>
+        <p class="lead text-center" data-aos="fade-up">
+            Somos un equipo especializado en mediación comunitaria, educativa, sanitaria y social.
+        </p>
+    </section>
+
+    <!-- VISIÓN -->
+    <section id="vision" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4" data-aos="fade-up">Nuestra Visión</h2>
+            <p class="text-center" data-aos="fade-up">
+                Promover una cultura de paz, diálogo y convivencia positiva en todos los ámbitos sociales.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="container py-5">
+        <h2 class="text-center section-title mb-5" data-aos="fade-up">Servicios de Mediación</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="card shadow">
+                    <img src="https://picsum.photos/400/300?random=4" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Comunitaria</h5>
+                        <p class="card-text">Conflictos vecinales, convivencia y participación ciudadana.</p>
+                        <button class="btn btn-orange">Más info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="card shadow">
+                    <img src="https://picsum.photos/400/300?random=5" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Educativa</h5>
+                        <p class="card-text">Gestión de conflictos en centros educativos.</p>
+                        <button class="btn btn-orange">Más info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="card shadow">
+                    <img src="https://picsum.photos/400/300?random=6" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sanitaria</h5>
+                        <p class="card-text">Comunicación entre pacientes, familias y profesionales.</p>
+                        <button class="btn btn-orange">Más info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="card shadow">
+                    <img src="https://picsum.photos/400/300?random=7" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Social</h5>
+                        <p class="card-text">Intervención en colectivos vulnerables y servicios sociales.</p>
+                        <button class="btn btn-orange">Más info</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HITOS -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4" data-aos="fade-up">Hitos</h2>
+
+            <div class="accordion" id="hitosAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#h1">
+                            +500 casos resueltos
+                        </button>
+                    </h2>
+                    <div id="h1" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Experiencia consolidada en mediación comunitaria y social.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#h2">
+                            Programas educativos implementados
+                        </button>
+                    </h2>
+                    <div id="h2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Formación en convivencia y resolución pacífica de conflictos.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="container py-5">
+        <h2 class="text-center section-title mb-4" data-aos="fade-up">Testimonios</h2>
+
+        <blockquote class="blockquote text-center" data-aos="fade-up">
+            “Gracias a la mediación recuperamos el diálogo en nuestra comunidad.”
+        </blockquote>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4" data-aos="fade-up">Contacto</h2>
+
+            <form id="contactForm" class="col-md-6 mx-auto" data-aos="fade-up">
+                <input type="text" class="form-control mb-3" placeholder="Nombre" required>
+                <input type="email" class="form-control mb-3" placeholder="Correo" required>
+                <textarea class="form-control mb-3" rows="4" placeholder="Mensaje" required></textarea>
+                <button class="btn btn-orange w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container text-center">
+        <p><strong>Ubicación:</strong> Torrejón de Ardoz, Madrid</p>
+        <p><strong>Partners:</strong> Servicios Sociales, Centros Educativos, ONG</p>
+        <p><strong>Correo:</strong> mediacion@servicio.com</p>
+        <p>RRSS: Facebook | Instagram | LinkedIn</p>
+
+        <button class="btn btn-light mt-3">Ir a Servicios</button>
+        <button class="btn btn-outline-light mt-3">Ir a Contacto</button>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        Swal.fire({
+            title: "Mensaje enviado",
+            text: "Gracias por contactar con nosotros",
+            icon: "success"
+        });
+    });
+</script>
+
+</body>
+</html>
+
